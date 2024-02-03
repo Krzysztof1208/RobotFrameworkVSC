@@ -1,187 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-02T14:47:24.277901" rpa="false" schemaversion="5">
-<suite id="s1" name="Crm" source="C:\RobotFramework\Lesson 1\Tests\Crm.robot">
-<test id="s1-t1" name="The user should be able to add a new customer" line="12">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-03T19:49:32.993123" rpa="false" schemaversion="5">
+<suite id="s1" name="004RememberMeHolds" source="C:\RobotFramework\Lesson1\Tests\004RememberMeHolds.robot">
+<test id="s1-t1" name="Checked Remember Me checkbox holds credentials" line="9">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>.1s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-02-02T14:47:24.427901" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-03T19:49:33.227637" elapsed="0.001037"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
-<arg>10s</arg>
+<arg>5s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-02-02T14:47:24.427901" elapsed="0.000000"/>
-</kw>
-<kw name="Log" owner="BuiltIn">
-<msg time="2024-02-02T14:47:24.427901" level="INFO">Starting the test case</msg>
-<arg>Starting the test case</arg>
-<doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-02-02T14:47:24.427901" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-03T19:49:33.228674" elapsed="0.000000"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:24.432901" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/crm/index.html'.</msg>
+<msg time="2024-02-03T19:49:33.229652" level="INFO">Opening browser 'Edge' to base url 'https://automationplayground.com/crm/index.html'.</msg>
 <arg>https://automationplayground.com/crm/index.html</arg>
-<arg>Chrome</arg>
+<arg>Edge</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-02T14:47:24.427901" elapsed="2.562938"/>
+<status status="PASS" start="2024-02-03T19:49:33.229652" elapsed="2.651734"/>
 </kw>
-<kw name="Set Window Position" owner="SeleniumLibrary">
-<arg>x=341</arg>
-<arg>y=0</arg>
-<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
-<status status="PASS" start="2024-02-02T14:47:26.991632" elapsed="0.213845"/>
-</kw>
-<kw name="Set Window Size" owner="SeleniumLibrary">
-<arg>width=1900</arg>
-<arg>height=1900</arg>
-<doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" start="2024-02-02T14:47:27.205477" elapsed="0.213866"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:27.637152" level="INFO">Current page contains text 'Customers Are Priority One!'.</msg>
-<arg>Customers Are Priority One!</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-02-02T14:47:27.419343" elapsed="0.217809"/>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-03T19:49:35.881386" elapsed="0.223514"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:27.637674" level="INFO">Clicking link 'id=SignIn'.</msg>
+<msg time="2024-02-03T19:49:36.105901" level="INFO">Clicking link 'id=SignIn'.</msg>
 <arg>id=SignIn</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:27.637674" elapsed="0.570759"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:28.427895" level="INFO">Current page contains text 'Login'.</msg>
-<arg>Login</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-02-02T14:47:28.208778" elapsed="0.219117"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:28.428256" level="INFO">Typing text 'tester@gmail.com' into text field 'id=email-id'.</msg>
-<arg>id=email-id</arg>
-<arg>tester@gmail.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:28.428256" elapsed="0.374341"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:28.802597" level="INFO">Typing text 'haslo' into text field 'id=password'.</msg>
-<arg>id=password</arg>
-<arg>haslo</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:28.802597" elapsed="0.368363"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:29.173028" level="INFO">Clicking button 'id=submit-id'.</msg>
-<arg>id=submit-id</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:29.173028" elapsed="0.742034"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:30.353718" level="INFO">Current page contains text 'Our Happy Customers'.</msg>
-<arg>Our Happy Customers</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-02-02T14:47:29.915062" elapsed="0.438656"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:30.356401" level="INFO">Clicking element 'id=new-customer'.</msg>
-<arg>id=new-customer</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:30.355400" elapsed="0.623517"/>
-</kw>
-<kw name="Page Should Contain" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:31.191321" level="INFO">Current page contains text 'Add Customer'.</msg>
-<arg>Add Customer</arg>
-<doc>Verifies that current page contains ``text``.</doc>
-<status status="PASS" start="2024-02-02T14:47:30.978917" elapsed="0.212404"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:31.191801" level="INFO">Typing text 'tester1@test.com' into text field 'id=EmailAddress'.</msg>
-<arg>id=EmailAddress</arg>
-<arg>tester1@test.com</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:31.191801" elapsed="0.361025"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:31.552826" level="INFO">Typing text 'Edek1' into text field 'id=FirstName'.</msg>
-<arg>id=FirstName</arg>
-<arg>Edek1</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:31.552826" elapsed="0.408247"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:31.961073" level="INFO">Typing text 'Edkiewicz' into text field 'id=LastName'.</msg>
-<arg>id=LastName</arg>
-<arg>Edkiewicz</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:31.961073" elapsed="0.362167"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:32.323801" level="INFO">Typing text 'Dallas' into text field 'id=City'.</msg>
-<arg>id=City</arg>
-<arg>Dallas</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:32.323801" elapsed="0.366417"/>
-</kw>
-<kw name="Select From List By Value" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:32.690863" level="INFO">Selecting options from selection list 'id=StateOrRegion' by value TX.</msg>
-<arg>id=StateOrRegion</arg>
-<arg>TX</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<status status="PASS" start="2024-02-02T14:47:32.690863" elapsed="0.884002"/>
-</kw>
-<kw name="Select Radio Button" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:33.575081" level="INFO">Selecting 'male' from radio button 'gender'.</msg>
-<arg>gender</arg>
-<arg>male</arg>
-<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<status status="PASS" start="2024-02-02T14:47:33.575081" elapsed="0.345961"/>
-</kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:33.921042" level="INFO">Selecting checkbox 'promos-name'.</msg>
-<arg>promos-name</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:33.921042" elapsed="0.452849"/>
-</kw>
-<kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-02T14:47:34.373891" level="INFO">Clicking button 'Submit'.</msg>
-<arg>Submit</arg>
-<doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-02T14:47:34.373891" elapsed="0.613656"/>
+<status status="PASS" start="2024-02-03T19:49:36.104900" elapsed="0.556035"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Success! New customer added.</arg>
+<arg>Email address</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-02T14:47:34.988298" elapsed="0.110968"/>
+<status status="PASS" start="2024-02-03T19:49:36.660935" elapsed="0.112140"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-02-02T14:47:38.102359" level="INFO">Slept 3 seconds.</msg>
-<arg>3s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-02-02T14:47:35.099266" elapsed="3.003093"/>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-03T19:49:36.773075" level="INFO">Typing text 'test@gmail.com' into text field 'id=email-id'.</msg>
+<arg>id=email-id</arg>
+<arg>test@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T19:49:36.773075" elapsed="0.381134"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-03T19:49:37.154209" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2024-02-03T19:49:37.387145" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=password</arg>
+<arg>abcd</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T19:49:37.154209" elapsed="0.369625"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2024-02-03T19:49:37.523834" level="INFO">Selecting checkbox 'id=remember'.</msg>
+<arg>id=remember</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T19:49:37.523834" elapsed="0.578756"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-03T19:49:38.104593" level="INFO">Clicking button 'id=submit-id'.</msg>
+<arg>id=submit-id</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T19:49:38.104593" elapsed="0.727462"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Our Happy Customers</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-03T19:49:38.832055" elapsed="0.342234"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-03T19:49:39.174289" level="INFO">Clicking link 'Sign Out'.</msg>
+<arg>Sign Out</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T19:49:39.174289" elapsed="0.541418"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Signed Out</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-03T19:49:39.715707" elapsed="0.111027"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-03T19:49:39.826734" level="INFO">Clicking link 'Sign In'.</msg>
+<arg>Sign In</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-03T19:49:39.826734" elapsed="0.383993"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-03T19:49:40.669164" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-02-03T19:49:40.669164" level="FAIL">Element 'id=email-id' should have contained text 'test@gmail.com' but its text was ''.</msg>
+<arg>id=email-id</arg>
+<arg>test@gmail.com</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="FAIL" start="2024-02-03T19:49:40.210727" elapsed="0.461126">Element 'id=email-id' should have contained text 'test@gmail.com' but its text was ''.</status>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-02-02T14:47:38.102359" elapsed="2.184657"/>
+<status status="NOT RUN" start="2024-02-03T19:49:40.672823" elapsed="0.000000"/>
 </kw>
-<doc>This is a description of the Test</doc>
-<tag>007</tag>
-<tag>Contacts</tag>
-<tag>Smoke</tag>
-<status status="PASS" start="2024-02-02T14:47:24.427901" elapsed="15.859115"/>
+<doc>When checkbox Remember Me is checked the next login remembers the credentials</doc>
+<tag>004</tag>
+<tag>Functional</tag>
+<tag>Login</tag>
+<status status="FAIL" start="2024-02-03T19:49:33.227146" elapsed="7.445677">Element 'id=email-id' should have contained text 'test@gmail.com' but its text was ''.</status>
 </test>
-<doc>This is some basic information about whole suite</doc>
-<status status="PASS" start="2024-02-02T14:47:24.277901" elapsed="16.009115"/>
+<doc>Automationplayground learning page</doc>
+<status status="FAIL" start="2024-02-03T19:49:32.994322" elapsed="7.679621"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">007</stat>
-<stat pass="1" fail="0" skip="0">Contacts</stat>
-<stat pass="1" fail="0" skip="0">Smoke</stat>
+<stat pass="0" fail="1" skip="0">004</stat>
+<stat pass="0" fail="1" skip="0">Functional</stat>
+<stat pass="0" fail="1" skip="0">Login</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Crm">Crm</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="004RememberMeHolds">004RememberMeHolds</stat>
 </suite>
 </statistics>
 <errors>
