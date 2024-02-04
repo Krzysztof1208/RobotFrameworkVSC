@@ -1,120 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-03T19:49:32.993123" rpa="false" schemaversion="5">
-<suite id="s1" name="004RememberMeHolds" source="C:\RobotFramework\Lesson1\Tests\004RememberMeHolds.robot">
-<test id="s1-t1" name="Checked Remember Me checkbox holds credentials" line="9">
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-04T17:18:51.596732" rpa="false" schemaversion="5">
+<suite id="s1" name="005UserLogOut" source="C:\RobotFramework\Lesson1\Tests\005UserLogOut.robot">
+<test id="s1-t1" name="Successful log Out" line="9">
 <kw name="Set Selenium Speed" owner="SeleniumLibrary">
 <arg>.1s</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" start="2024-02-03T19:49:33.227637" elapsed="0.001037"/>
+<status status="PASS" start="2024-02-04T17:18:51.775719" elapsed="0.000000"/>
 </kw>
 <kw name="Set Selenium Timeout" owner="SeleniumLibrary">
-<arg>5s</arg>
+<arg>3s</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" start="2024-02-03T19:49:33.228674" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-04T17:18:51.775719" elapsed="0.000000"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:33.229652" level="INFO">Opening browser 'Edge' to base url 'https://automationplayground.com/crm/index.html'.</msg>
+<msg time="2024-02-04T17:18:51.775719" level="INFO">Opening browser 'Chrome' to base url 'https://automationplayground.com/crm/index.html'.</msg>
 <arg>https://automationplayground.com/crm/index.html</arg>
-<arg>Edge</arg>
+<arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-02-03T19:49:33.229652" elapsed="2.651734"/>
+<status status="PASS" start="2024-02-04T17:18:51.775719" elapsed="2.590864"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Customers Are Priority One!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-02-04T17:18:54.366583" elapsed="0.118161"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-02-03T19:49:35.881386" elapsed="0.223514"/>
+<status status="PASS" start="2024-02-04T17:18:54.486710" elapsed="0.231714"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:36.105901" level="INFO">Clicking link 'id=SignIn'.</msg>
+<msg time="2024-02-04T17:18:54.718424" level="INFO">Clicking link 'id=SignIn'.</msg>
 <arg>id=SignIn</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-03T19:49:36.104900" elapsed="0.556035"/>
+<status status="PASS" start="2024-02-04T17:18:54.718424" elapsed="0.573791"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Email address</arg>
+<arg>Login</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-03T19:49:36.660935" elapsed="0.112140"/>
+<status status="PASS" start="2024-02-04T17:18:55.292215" elapsed="0.120656"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:36.773075" level="INFO">Typing text 'test@gmail.com' into text field 'id=email-id'.</msg>
+<msg time="2024-02-04T17:18:55.415542" level="INFO">Typing text 'edek@gmail.com' into text field 'id=email-id'.</msg>
 <arg>id=email-id</arg>
-<arg>test@gmail.com</arg>
+<arg>edek@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-03T19:49:36.773075" elapsed="0.381134"/>
+<status status="PASS" start="2024-02-04T17:18:55.414505" elapsed="0.382088"/>
 </kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:37.154209" level="INFO">Typing password into text field 'id=password'.</msg>
-<msg time="2024-02-03T19:49:37.387145" level="INFO">Temporally setting log level to: NONE</msg>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-04T17:18:55.798596" level="INFO">Typing text 'abc' into text field 'id=password'.</msg>
 <arg>id=password</arg>
-<arg>abcd</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-03T19:49:37.154209" elapsed="0.369625"/>
-</kw>
-<kw name="Select Checkbox" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:37.523834" level="INFO">Selecting checkbox 'id=remember'.</msg>
-<arg>id=remember</arg>
-<doc>Selects the checkbox identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-03T19:49:37.523834" elapsed="0.578756"/>
+<arg>abc</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-04T17:18:55.797638" elapsed="0.372442"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:38.104593" level="INFO">Clicking button 'id=submit-id'.</msg>
+<msg time="2024-02-04T17:18:56.170080" level="INFO">Clicking button 'id=submit-id'.</msg>
 <arg>id=submit-id</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-03T19:49:38.104593" elapsed="0.727462"/>
+<status status="PASS" start="2024-02-04T17:18:56.170080" elapsed="0.769060"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
-<arg>Our Happy Customers</arg>
+<arg>Sign Out</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-03T19:49:38.832055" elapsed="0.342234"/>
+<status status="PASS" start="2024-02-04T17:18:56.939140" elapsed="0.344465"/>
 </kw>
 <kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:39.174289" level="INFO">Clicking link 'Sign Out'.</msg>
+<msg time="2024-02-04T17:18:57.283605" level="INFO">Clicking link 'Sign Out'.</msg>
 <arg>Sign Out</arg>
 <doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-03T19:49:39.174289" elapsed="0.541418"/>
+<status status="PASS" start="2024-02-04T17:18:57.283605" elapsed="0.545706"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Signed Out</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-02-03T19:49:39.715707" elapsed="0.111027"/>
+<status status="PASS" start="2024-02-04T17:18:57.829311" elapsed="0.110368"/>
 </kw>
-<kw name="Click Link" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:39.826734" level="INFO">Clicking link 'Sign In'.</msg>
-<arg>Sign In</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="PASS" start="2024-02-03T19:49:39.826734" elapsed="0.383993"/>
-</kw>
-<kw name="Element Should Contain" owner="SeleniumLibrary">
-<msg time="2024-02-03T19:49:40.669164" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2024-02-03T19:49:40.669164" level="FAIL">Element 'id=email-id' should have contained text 'test@gmail.com' but its text was ''.</msg>
-<arg>id=email-id</arg>
-<arg>test@gmail.com</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<status status="FAIL" start="2024-02-03T19:49:40.210727" elapsed="0.461126">Element 'id=email-id' should have contained text 'test@gmail.com' but its text was ''.</status>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-04T17:19:00.941871" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-04T17:18:57.941631" elapsed="3.000240"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2024-02-03T19:49:40.672823" elapsed="0.000000"/>
+<status status="PASS" start="2024-02-04T17:19:00.941871" elapsed="2.212381"/>
 </kw>
-<doc>When checkbox Remember Me is checked the next login remembers the credentials</doc>
-<tag>004</tag>
+<doc>The user is able to log out successfully</doc>
+<tag>005</tag>
 <tag>Functional</tag>
 <tag>Login</tag>
-<status status="FAIL" start="2024-02-03T19:49:33.227146" elapsed="7.445677">Element 'id=email-id' should have contained text 'test@gmail.com' but its text was ''.</status>
+<status status="PASS" start="2024-02-04T17:18:51.775043" elapsed="11.381812"/>
 </test>
 <doc>Automationplayground learning page</doc>
-<status status="FAIL" start="2024-02-03T19:49:32.994322" elapsed="7.679621"/>
+<status status="PASS" start="2024-02-04T17:18:51.596732" elapsed="11.563918"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">004</stat>
-<stat pass="0" fail="1" skip="0">Functional</stat>
-<stat pass="0" fail="1" skip="0">Login</stat>
+<stat pass="1" fail="0" skip="0">005</stat>
+<stat pass="1" fail="0" skip="0">Functional</stat>
+<stat pass="1" fail="0" skip="0">Login</stat>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="004RememberMeHolds">004RememberMeHolds</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="005UserLogOut">005UserLogOut</stat>
 </suite>
 </statistics>
 <errors>
