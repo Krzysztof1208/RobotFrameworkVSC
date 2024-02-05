@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-05T16:57:27.763779" rpa="false" schemaversion="5">
+<suite id="s1" name="001HomePageOpens" source="C:\RobotFramework\Conduit\Tests\001HomePageOpens.robot">
+<test id="s1-t1" name="The user should be able to open the home page Conduit" line="12">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.1s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-02-05T16:57:27.945668" elapsed="0.000000"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-02-05T16:57:27.946653" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-05T16:57:27.946653" level="INFO">Starting the test case</msg>
+<arg>Starting the test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-05T16:57:27.946653" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-05T16:57:27.947660" level="INFO">Opening browser 'Chrome' to base url 'https://conduit.mate.academy/'.</msg>
+<arg>https://conduit.mate.academy/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-05T16:57:27.947660" elapsed="2.882611"/>
+</kw>
+<kw name="Set Window Position" owner="SeleniumLibrary">
+<arg>x=341</arg>
+<arg>y=0</arg>
+<doc>Sets window position using ``x`` and ``y`` coordinates.</doc>
+<status status="PASS" start="2024-02-05T16:57:30.830271" elapsed="0.215936"/>
+</kw>
+<kw name="Set Window Size" owner="SeleniumLibrary">
+<arg>width=1900</arg>
+<arg>height=1900</arg>
+<doc>Sets current windows size to given ``width`` and ``height``.</doc>
+<status status="PASS" start="2024-02-05T16:57:31.048177" elapsed="0.213160"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-05T16:57:31.481123" level="INFO">Current page contains text 'A place to share your knowledge.'.</msg>
+<arg>A place to share your knowledge.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-05T16:57:31.261337" elapsed="0.219786"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-05T16:57:34.482248" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-05T16:57:31.481123" elapsed="3.001125"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-05T16:57:34.482633" elapsed="2.195188"/>
+</kw>
+<doc>This is a learning process contiuation with Conduit page</doc>
+<tag>001</tag>
+<tag>Login</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-02-05T16:57:27.944783" elapsed="8.733038"/>
+</test>
+<doc>My combination with Conduit.mate.academy</doc>
+<status status="PASS" start="2024-02-05T16:57:27.765782" elapsed="8.913104"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">001</stat>
+<stat pass="1" fail="0" skip="0">Login</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="001HomePageOpens">001HomePageOpens</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
