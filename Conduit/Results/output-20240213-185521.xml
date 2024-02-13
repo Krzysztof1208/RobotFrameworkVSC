@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-02-13T18:55:21.948385" rpa="false" schemaversion="5">
+<suite id="s1" name="003Registering" source="C:\RobotFramework\Conduit\Tests\003Registering.robot">
+<test id="s1-t1" name="The user should be able to create an account and register with valid credentials" line="12">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>.0s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-02-13T18:55:22.572386" elapsed="0.001000"/>
+</kw>
+<kw name="Set Selenium Timeout" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the timeout that is used by various keywords.</doc>
+<status status="PASS" start="2024-02-13T18:55:22.573386" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-13T18:55:22.573386" level="INFO">The user is able to register a new account with the valid credentials</msg>
+<arg>The user is able to register a new account with the valid credentials</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-13T18:55:22.573386" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-02-13T18:55:22.574386" level="INFO">Starting the test case</msg>
+<arg>Starting the test case</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-02-13T18:55:22.574386" elapsed="0.000000"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:22.574386" level="INFO">Opening browser 'firefox' to base url 'HTTP://Google.com'.</msg>
+<arg>HTTP://Google.com</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-13T18:55:22.574386" elapsed="7.322640"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:29.898026" level="INFO">Opening url 'https://conduit.mate.academy/'</msg>
+<arg>https://conduit.mate.academy/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-13T18:55:29.897026" elapsed="2.003677"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-13T18:55:31.900703" elapsed="0.267513"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:32.182215" level="INFO">Current page contains text 'A place to share your knowledge.'.</msg>
+<arg>A place to share your knowledge.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.169219" elapsed="0.012996"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:32.182215" level="INFO">Clicking link 'Sign up'.</msg>
+<arg>Sign up</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.182215" elapsed="0.254059"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:32.442266" level="INFO">Current page contains text 'Sign up'.</msg>
+<arg>Sign up</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.437268" elapsed="0.005998"/>
+</kw>
+<kw name="User Name" owner="FakerLibrary">
+<msg time="2024-02-13T18:55:32.443266" level="INFO">${Username} = pattersonanthony</msg>
+<var>${Username}</var>
+<status status="PASS" start="2024-02-13T18:55:32.443266" elapsed="0.000000"/>
+</kw>
+<kw name="Email" owner="FakerLibrary">
+<msg time="2024-02-13T18:55:32.444265" level="INFO">${Email} = brentcopeland@example.com</msg>
+<var>${Email}</var>
+<status status="PASS" start="2024-02-13T18:55:32.443266" elapsed="0.000999"/>
+</kw>
+<kw name="Password" owner="FakerLibrary">
+<msg time="2024-02-13T18:55:32.444265" level="INFO">${Password} = epT6Zceb%K</msg>
+<var>${Password}</var>
+<doc>Generate a random password of the specified ``length``.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.444265" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:32.445265" level="INFO">Typing text 'pattersonanthony' into text field 'xpath://input[@placeholder="Username"]'.</msg>
+<arg>xpath://input[@placeholder="Username"]</arg>
+<arg>${Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.444265" elapsed="0.055000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:32.499265" level="INFO">Typing text 'brentcopeland@example.com' into text field 'xpath://input[@placeholder="Email"]'.</msg>
+<arg>xpath://input[@placeholder="Email"]</arg>
+<arg>${Email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.499265" elapsed="0.048001"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:32.548265" level="INFO">Typing password into text field 'xpath://input[@placeholder="Password"]'.</msg>
+<msg time="2024-02-13T18:55:32.557297" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>xpath://input[@placeholder="Password"]</arg>
+<arg>${Password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.547266" elapsed="0.021001"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:32.569267" level="INFO">Clicking button 'Sign up'.</msg>
+<arg>Sign up</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.568267" elapsed="0.231427"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T18:55:35.800793" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T18:55:32.800693" elapsed="3.000100"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-13T18:55:35.804794" level="INFO">Current page contains text 'Global Feed'.</msg>
+<arg>Global Feed</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-02-13T18:55:35.800793" elapsed="0.005002"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T18:55:38.806440" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T18:55:35.805795" elapsed="3.000645"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-13T18:55:38.806440" elapsed="2.835072"/>
+</kw>
+<doc>This is a learning process contiuation with Conduit page</doc>
+<tag>002</tag>
+<tag>Registering</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2024-02-13T18:55:22.571386" elapsed="19.070126"/>
+</test>
+<doc>My combination with Conduit.mate.academy</doc>
+<status status="PASS" start="2024-02-13T18:55:21.950387" elapsed="19.692125"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">002</stat>
+<stat pass="1" fail="0" skip="0">Registering</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="003Registering">003Registering</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
